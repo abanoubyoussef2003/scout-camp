@@ -1,0 +1,45 @@
+/* ── Reset & Root ── */
+:root {
+  --sand: #c8a96e;
+  --sand-light: #e8d5a3;
+  --sand-pale: #f5edd8;
+  --brown-deep: #3d2214;
+  --brown: #6b3a1f;
+  --brown-mid: #8b5e3c;
+  --brown-light: #b8845a;
+  --rope: #a07040;
+  --accent: #d4682a;
+  --white: #fdf8f0;
+  --text-dark: #2a1505;
+  --shadow: rgba(61, 34, 20, 0.25);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: var(--white);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  direction: rtl;
+}
+
+/* ── Animations ── */
+@keyframes heroZoom {
+  from { transform: scale(1.04); }
+  to   { transform: scale(1.12) translateY(-2%); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--sand-pale); }
+::-webkit-scrollbar-thumb { background: var(--brown-light); border-radius: 3px; }
